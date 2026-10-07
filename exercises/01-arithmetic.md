@@ -1,48 +1,16 @@
-# Exercise 4 — Predict, Then Run
-
-**Fill in the PREDICTED column completely before you run any code.** That's the whole exercise. Checking the answer without committing to a guess teaches you nothing.
-
-| # | Expression | Predicted | Actual | Right? | If wrong, why? |
-|---|---|---|---|---|---|
-| 1 | `9 / 2` | | | | |
-| 2 | `9 % 2` | | | | |
-| 3 | `9.0 / 2` | | | | |
-| 4 | `9 / 2.0` | | | | |
-| 5 | `2 + 3 * 4` | | | | |
-| 6 | `(2 + 3) * 4` | | | | |
-| 7 | `20 - 5 - 3` | | | | |
-| 8 | `17 % 5` | | | | |
-| 9 | `5 % 17` | | | | |
-| 10 | `100 / 3 / 3` | | | | |
-| 11 | `1 / 2 * 100` | | | | |
-| 12 | `100 * 1 / 2` | | | | |
-
----
-
-## Follow-up
-
-**1. Compare #11 and #12. Same numbers, same operators, completely different answers. Explain why.**
-
-[your answer]
-
-**2. #9 gives `5`. Explain why `5 % 17` is 5 and not 0.**
-
-[your answer]
-
-**3. A classmate writes this to calculate a percentage:**
-```java
-int correct = 7;
-int total = 10;
-double percent = correct / total * 100;
-```
-**They get `0.0`. Explain what went wrong and write the corrected line.**
-
-[your answer]
-
-```java
-// corrected line:
-```
-
-**4. Give one real situation where `%` would genuinely be useful. Not from this worksheet — something from your own life or your project idea.**
-
-[your answer]
+public class Arithmetic {
+    public static void main(String[] args) {
+        System.out.println(9 / 2);       // 4
+        System.out.println(9 % 2);       // 1
+        System.out.println(9.0 / 2);     // 4.5
+        System.out.println(9 / 2.0);     // 4.5
+        System.out.println(2 + 3 * 4);   // 14
+        System.out.println((2 + 3) * 4); // 20
+        System.out.println(20 - 5 - 3);  // 12
+        System.out.println(17 % 5);      // 2
+        System.out.println(5 % 17);      // 5
+        System.out.println(100 / 3 / 3); // 11
+        System.out.println(1 / 2 * 100); // 0
+        System.out.println(100 * 1 / 2); // 50
+    }
+}
