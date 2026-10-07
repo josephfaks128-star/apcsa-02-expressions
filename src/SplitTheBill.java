@@ -15,7 +15,13 @@ public class SplitTheBill {
         int billCents = 10000;
         int people = 3;
 
-        // Your code here
+        int share = billCents / people;
+        int leftover = billCents % people;
 
+        System.out.println("Each person pays: " + share + " cents");
+        System.out.println("Left over: " + leftover + " cents");
+
+        double dollars = share / 100.0;
+        System.out.printf("Share in dollars: $%.2f%n", dollars);
     }
 }
